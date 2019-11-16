@@ -71,7 +71,7 @@
 
 ## 4D toys
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0t4aKJuKP0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](http://img.youtube.com/vi/0t4aKJuKP0Q/0.jpg)](http://www.youtube.com/watch?v=0t4aKJuKP0Q "")
 
 Единственное за что я хейчу эту игру - это проекция, которую они используют. Они используют cross-section - вырезку объекта плоскостью. 
 
