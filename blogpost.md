@@ -3,11 +3,11 @@ layout: post
 title: "4D"
 tags: 4D систематизация
 permalink: 4D
-description: "Сборник информации о четвёртом измерении"
-tagline: 4d fourth d
-image: img/inside4D_2.png
+description: "Сборник информации о четвёртом измерении. Если вы изучете всё что здесь находится, то сможете понять четвёртое измерение."
+image: submodules/4D/img/inside4D_2.png
 submodule: true
-thisname: 2020-11-13-4d
+thisname: submodules/4D
+date: 2020-12-15
 ---
 
 {% include_relative README.md %}
