@@ -7,7 +7,7 @@ description: "Сборник информации о четвёртом изме
 image: submodules/4D/img/inside4D_2.png
 submodule: true
 thisname: submodules/4D
-date: 2020-12-15
+date: 2020-01-05
 ---
 
 {% include_relative README.md %}
