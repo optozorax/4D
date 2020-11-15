@@ -234,7 +234,7 @@
 
 ## Бродилка по 2D пространству
 
-[![](https://raw.githubusercontent.com/shaunlebron/bl1nd-ld28/master/promo/bl1nd.png)](https://github.com/shaunlebron/bl1nd-ld28])
+[![](https://raw.githubusercontent.com/shaunlebron/bl1nd-ld28/master/promo/bl1nd.png)](https://github.com/shaunlebron/bl1nd-ld28)
 
 Вам даётся 1D зрение на 360 градусов, и вы должны бродить по 2D миру с таким зрением. В целом игра хорошая, только ей очень не хватает освещения, а то различить угол фигуры и её прямую часть невозможно, отчего сложней ориентироваться. В 3D подобный образ рисования выглядел бы так:
 
