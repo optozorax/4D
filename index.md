@@ -1,43 +1,22 @@
++++
+title = "4D"
+weight = 20
+description = "Сборник информации о четвёртом измерении. Если вы изучите всё что здесь находится, то сможете понять четвёртое измерение."
+
+[taxonomies]
+tags = ["4D", "систематизация"]
+
+[extra]
+image = "img/inside4D_2.png"
+vk = "https://vk.com/wall-169103586_30"
+button = { text = "Репозиторий этой страницы", link="https://github.com/optozorax/4D" }
++++
+
 # Четырёхмерное пространство (4D)
 
 Здесь будет систематизироваться информация о четвёртом измерении: как его понять, представить и прочие интересности.
 
-Приглашаю к обсуждению темы в чате в телеграме: https://t.me/metageometria
-
-# Оглавление
-
-* [Четырёхмерное пространство (4D)](#четырёхмерное-пространство-4d)
-* [Что это такое?](#что-это-такое)
-* [FAQ](#faq)
-   * [А что насчёт времени? Время - это же четвёртая ось, да? Так Эйнштейн говорил.](#а-что-насчёт-времени-время---это-же-четвёртая-ось-да-так-эйнштейн-говорил)
-   * [4D - это только время!](#4d---это-только-время)
-   * [А я ходил в кинотеатр 7D!](#а-я-ходил-в-кинотеатр-7d)
-   * [Почему именно 4D, почему не 5D, 100500D?](#почему-именно-4d-почему-не-5d-100500d)
-   * [4D не существует!](#4d-не-существует)
-   * [В 4D мы будем видеть сразу и поверхность и внутренности всех объектов?!](#в-4d-мы-будем-видеть-сразу-и-поверхность-и-внутренности-всех-объектов)
-   * [А как это - 3D зрение?](#а-как-это---3d-зрение)
-   * [У нас же два глаза, а что если добавить третий? А в 4D пространстве сколько нужно глаз?](#у-нас-же-два-глаза-а-что-если-добавить-третий-а-в-4d-пространстве-сколько-нужно-глаз)
-   * [А я тоже когда поем грибочков, столько много размерностей пространства вижу!](#а-я-тоже-когда-поем-грибочков-столько-много-размерностей-пространства-вижу)
-   * [Почему мы не можем представить 4D?](#почему-мы-не-можем-представить-4d)
-* [Как понять?](#как-понять)
-   * [Логически](#логически)
-      * [Тессеракт](#тессеракт)
-   * [Визуально](#визуально)
-* [Интересности](#интересности)
-   * [4D геометрические фигуры](#4d-геометрические-фигуры)
-   * [4D toys](#4d-toys)
-* [Unsorted](#unsorted)
-   * [Видео о том, как нарисовать тессеракт и что он из себя представляет](#видео-о-том-как-нарисовать-тессеракт-и-что-он-из-себя-представляет)
-   * [Сборка тессеракта из его развёртки](#сборка-тессеракта-из-его-развёртки)
-   * [Как собирается 120-cell](#как-собирается-120-cell)
-   * [Бродилка по 2D пространству](#бродилка-по-2d-пространству)
-   * [Поржать](#поржать)
-   * [Всякое пространственное](#всякое-пространственное)
-   * [Список четырёхмерных игр](#список-четырёхмерных-игр)
-   * [Форум по 4D](#форум-по-4d)
-   * [Объяснение того, как работают проекции](#объяснение-того-как-работают-проекции)
-   * [Рейтрейсинг четырёхрменого пространства](#рейтрейсинг-четырёхрменого-пространства)
-   * [Несортированное](#несортированное)
+Приглашаю к обсуждению темы в чате в телеграме: <https://t.me/metageometria>
 
 # Что это такое?
 
@@ -103,7 +82,10 @@
 
 Тогда 3D изображение - это трёхмерный массив пикселей, или уже [вокселей](https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BA%D1%81%D0%B5%D0%BB). И визуализировать его можно так:
 
-[![](https://www.researchgate.net/profile/Jean-bernard_Martens/publication/234808536/figure/fig4/AS:670361830051847@1536838123477/Volumetric-data-interface-volume-visualization-left-and-cutting-plane-visualization.ppm)](https://www.researchgate.net/figure/Volumetric-data-interface-volume-visualization-left-and-cutting-plane-visualization_fig4_234808536)
+
+{{ figure_start() }}
+{{ image(path="img/3d.jpg") }}
+{{ figure_end(caption="[Источник](https://www.researchgate.net/figure/Volumetric-data-interface-volume-visualization-left-and-cutting-plane-visualization_fig4_234808536)") }}
 
 Мы видим эту картинку нашими 2D глазами, поэтому у нас некоторые детали перекрываются другими. Если бы у нас было 3D зрение, мы бы видели это так же чётко и со всеми внутренностями, как будто бы смотрели на плоскую картинку.
 
@@ -111,11 +93,12 @@
 
 И можно увидеть это на картинке:
 
-![](/img/2D_image.png)
-
-![](/img/3D_image.png)
-
-Взято [отсюда](http://eusebeia.dyndns.org/4d/vis/vis.html).
+{{ figure_start() }}
+{{ container_start() }}
+{{ image(path="img/2D_image.png", scale="1/2") }}
+{{ image(path="img/3D_image.png", scale="1/2") }}
+{{ container_end() }}
+{{ figure_end(caption="Взято [отсюда](http://eusebeia.dyndns.org/4d/vis/vis.html).") }}
 
 ## У нас же два глаза, а что если добавить третий? А в 4D пространстве сколько нужно глаз?
 
@@ -156,16 +139,19 @@
 
 Вы спросите: где находится его внутренность? Это можно показать на гифках:
 
-![](/img/3D.gif)
-![](/img/4D.gif)
+{{ container_start() }}
+{{ other_image(path="img/3D.gif", scale="1/2") }}
+{{ other_image(path="img/4D.gif", scale="1/2") }}
+{{ container_end() }}
 
 Почему на гифке кручения тессеракта он выглядит так, как будто входит сам в себя? Потому что проекция куба тоже выглядит как квадрат входит в самого себя. Сравните:
 
-![](/img/inside3D.png)
-![](/img/inside3D_2.png)
-
-![](/img/inside4D.png)
-![](/img/inside4D_2.png)
+{{ container_start() }}
+{{ image(path="img/inside3D.png", scale="1/2") }}
+{{ image(path="img/inside3D_2.png", scale="1/2") }}
+{{ image(path="img/inside4D.png", scale="1/2") }}
+{{ image(path="img/inside4D_2.png", scale="1/2") }}
+{{ container_end() }}
 
 Картинки взяты [отсюда](http://eusebeia.dyndns.org/4d/vis/11-interp-2).
 
@@ -192,15 +178,15 @@
 
 [**The Regular Polychora**](http://eusebeia.dyndns.org/4d/regular)
 
-![Картинка для привлечения внимания](http://eusebeia.dyndns.org/4d/img/spidrox-006.png)
-
-Кстати, эта картинка взята [отсюда](http://eusebeia.dyndns.org/4d/spidrox).
+{{ figure_start() }}
+{{ image(path="img/spidrox-006.png", scale="1/2") }}
+{{ figure_end(caption="[Источник](http://eusebeia.dyndns.org/4d/spidrox)") }}
 
 Вообще, я не представляю каким образом они смогли рассчитать все эти фигуры, это просто невообразимо. Наверное за этим стоит очень сложная математика. Жаль что они написали координаты фигур в таком неудобном формате.
 
 ## 4D toys
 
-[![](http://img.youtube.com/vi/0t4aKJuKP0Q/0.jpg)](http://www.youtube.com/watch?v=0t4aKJuKP0Q "")
+{{ youtube(id="0t4aKJuKP0Q") }}
 
 Это игра, где можно взаимодействовать с 4D объектами, в том числе и при помощи VR.
 
@@ -218,30 +204,34 @@
 
 ## Видео о том, как нарисовать тессеракт и что он из себя представляет
 
-[![](http://img.youtube.com/vi/iGO12Z5Lw8s/0.jpg)](http://www.youtube.com/watch?v=iGO12Z5Lw8s "")
+{{ youtube(id="iGO12Z5Lw8s") }}
 
 ## Сборка тессеракта из его развёртки
 
 Берётся 3D развёртка тессеракта и собирается в 4D куб, всё по аналогии с 2D развёрткой 3D куба.
 
-[![](http://img.youtube.com/vi/BVo2igbFSPE/0.jpg)](http://www.youtube.com/watch?v=BVo2igbFSPE "")
+{{ youtube(id="BVo2igbFSPE") }}
 
 ## Как собирается 120-cell
 
 120-cell - правильная фигура в 4D, состоящая исключительно из додэкаэдров, которые в свою очередь состоят из правильных пятиугольников.
 
-[![](http://img.youtube.com/vi/MFXRRW9goTs/0.jpg)](http://www.youtube.com/watch?v=MFXRRW9goTs "")
+{{ youtube(id="MFXRRW9goTs") }}
 
 Это очень красивое видео, где показывается как собирается эта фигура из её развёртки.
 
 ## Бродилка по 2D пространству
 
-[![](https://raw.githubusercontent.com/shaunlebron/bl1nd-ld28/master/promo/bl1nd.png)](https://github.com/shaunlebron/bl1nd-ld28)
+{{ figure_start() }}
+{{ image(path="img/bl1nd.png") }}
+{{ figure_end(caption="[Ссылка на игру](https://github.com/shaunlebron/bl1nd-ld28)") }}
 
 Вам даётся 1D зрение на 360 градусов, и вы должны бродить по 2D миру с таким зрением. В целом игра хорошая, только ей очень не хватает освещения, а то различить угол фигуры и её прямую часть невозможно, отчего сложней ориентироваться. В 3D подобный образ рисования выглядел бы так:
 
-![](img/blind1.jpg)
-![](img/blind2.jpg)
+{{ container_start() }}
+{{ image(path="img/blind1.jpg", scale="1/2") }}
+{{ image(path="img/blind2.jpg", scale="1/2") }}
+{{ container_end() }}
 
 Так же там на гифках хорошо показывается как работает проекция.
 
@@ -251,13 +241,13 @@
 
 ## Поржать 
 
-[![](http://img.youtube.com/vi/YiPR2PhPTlM/0.jpg)](http://www.youtube.com/watch?v=YiPR2PhPTlM "")
+{{ youtube(id="YiPR2PhPTlM") }}
 
-[![](http://img.youtube.com/vi/psbp9LtYnSI/0.jpg)](http://www.youtube.com/watch?v=psbp9LtYnSI "")
+{{ youtube(id="psbp9LtYnSI") }}
 
 ## Всякое пространственное
 
-[![](http://img.youtube.com/vi/CN_hdnnvPdo/0.jpg)](http://www.youtube.com/watch?v=CN_hdnnvPdo "")
+{{ youtube(id="CN_hdnnvPdo") }}
 
 Видео не идеальное, но есть много интересностей и прикольных визуализаций.
 
@@ -265,16 +255,16 @@
 
 * Порталы
   * **Неевклидовы миры.** Реализовано на базе порталов. Никакой сверхгеометрии там нет, просто все эти комнаты лежат в другом месте, и порталы телепортируют тебя в нужное место.
-    [![](http://img.youtube.com/vi/kEB11PQ9Eo8/0.jpg)](http://www.youtube.com/watch?v=kEB11PQ9Eo8 "")
+{{ youtube(id="kEB11PQ9Eo8") }}
   * [**Портал в портале.**](https://pikabu.ru/story/portal_v_portale_reshenie_problemyi_s_pomoshchyu_simulyatsii_7066445) - моя работа.
   * [Порталы - это не неевклидова геометрия!](https://t.me/metageometria/367)
 * Высшие и низшие размерности
 * Сферическая геометрия
 	* [Прикольное видео про стереографичекую проекцию](http://www-users.math.umn.edu/~arnold//moebius/moebius-movie.mov). Взято [отсюда.](http://www-users.math.umn.edu/~arnold//moebius/)
-	![](img/stereo1.jpg)
+{{ image(path="img/stereo1.jpg") }}
 * Геометрия лобачевского
 	* [Кубик-рубика в разных пространствах](http://roice3.org/magictile/)
-	  ![](http://roice3.org/magictile/pics/magictile_header.png)
+{{ image(path="img/magictile_header.png") }}
 * [Фрактальная размерность пространства](https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BA%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C)
 * [Реально неевклидовый мир](https://www.youtube.com/watch?v=tl40xidKF-4)
 
@@ -288,13 +278,15 @@
 
 ## Объяснение того, как работают проекции
 
-[![](/img/projections.png)](http://shaunlebron.github.io/visualizing-projections/)
+{{ figure_start() }}
+{{ image(path="img/projections.png") }}
+{{ figure_end(caption="[Ссылка на страницу](http://shaunlebron.github.io/visualizing-projections/)") }}
 
 ## Рейтрейсинг четырёхрменого пространства
 
-https://habr.com/ru/post/114698/
+<https://habr.com/ru/post/114698/>
 
-https://habr.com/ru/post/113485/
+<https://habr.com/ru/post/113485/>
 
 ## Несортированное
 
