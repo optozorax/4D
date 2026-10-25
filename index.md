@@ -67,7 +67,7 @@ button = { text = "Репозиторий этой страницы", link="http
 
 Если хочется сказать, что "наш мир не работает согласно идее о пространстве-времени", то надо тоже говорить именно так.
 
-## В 4D мы будем видеть сразу и поверхность и внутренности всех объектов?!
+## В 4D мы будем видеть сразу и поверхность и внутренности всех объектов?! {#v-4d-my-budem-videt-srazu-i-poverkhnost-i-vnutrennosti-vsekh-obektov}
 
 Ещё скажите, что будем видеть "одновременно со всех сторон". Нет, в 4D, аналогично 3D и 2D, мы будем видеть только поверхность 4D объектов. Зато мы сможем видеть внутренности 3D объектов, ведь там 3D будет плоское, и зрение будет 3D. Происходить это будет аналогично тому, как мы в 3D видим внутренности 2D объектов.
 
@@ -84,9 +84,9 @@ button = { text = "Репозиторий этой страницы", link="http
 Тогда 3D изображение - это трёхмерный массив пикселей, или уже [вокселей](https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BA%D1%81%D0%B5%D0%BB). И визуализировать его можно так:
 
 
-{{ figure_start() }}
-{{ image(path="img/3d.jpg") }}
-{{ figure_end(caption="[Источник](https://www.researchgate.net/figure/Volumetric-data-interface-volume-visualization-left-and-cutting-plane-visualization_fig4_234808536)") }}
+{% <figure caption="[Источник](https://www.researchgate.net/figure/Volumetric-data-interface-volume-visualization-left-and-cutting-plane-visualization_fig4_234808536)"> %}
+{{ <image path="img/3d.jpg" /> }}
+{% </figure> %}
 
 Мы видим эту картинку нашими 2D глазами, поэтому у нас некоторые детали перекрываются другими. Если бы у нас было 3D зрение, мы бы видели это так же чётко и со всеми внутренностями, как будто бы смотрели на плоскую картинку.
 
@@ -94,12 +94,12 @@ button = { text = "Репозиторий этой страницы", link="http
 
 И можно увидеть это на картинке:
 
-{{ figure_start() }}
-{{ container_start() }}
-{{ image(path="img/2D_image.png", scale="1/2") }}
-{{ image(path="img/3D_image.png", scale="1/2") }}
-{{ container_end() }}
-{{ figure_end(caption="Взято [отсюда](http://eusebeia.dyndns.org/4d/vis/vis.html).") }}
+{% <figure caption="Взято [отсюда](http://eusebeia.dyndns.org/4d/vis/vis.html)."> %}
+{% <container> %}
+{{ <image path="img/2D_image.png" scale="1/2" /> }}
+{{ <image path="img/3D_image.png" scale="1/2" /> }}
+{% </container> %}
+{% </figure> %}
 
 ## У нас же два глаза, а что если добавить третий? А в 4D пространстве сколько нужно глаз?
 
@@ -140,19 +140,19 @@ button = { text = "Репозиторий этой страницы", link="http
 
 Вы спросите: где находится его внутренность? Это можно показать на гифках:
 
-{{ container_start() }}
-{{ other_image(path="img/3D.gif", scale="1/2") }}
-{{ other_image(path="img/4D.gif", scale="1/2") }}
-{{ container_end() }}
+{% <container> %}
+{{ <other_image path="img/3D.gif" scale="1/2" /> }}
+{{ <other_image path="img/4D.gif" scale="1/2" /> }}
+{% </container> %}
 
 Почему на гифке кручения тессеракта он выглядит так, как будто входит сам в себя? Потому что проекция куба тоже выглядит как квадрат входит в самого себя. Сравните:
 
-{{ container_start() }}
-{{ image(path="img/inside3D.png", scale="1/2") }}
-{{ image(path="img/inside3D_2.png", scale="1/2") }}
-{{ image(path="img/inside4D.png", scale="1/2") }}
-{{ image(path="img/inside4D_2.png", scale="1/2") }}
-{{ container_end() }}
+{% <container> %}
+{{ <image path="img/inside3D.png" scale="1/2" /> }}
+{{ <image path="img/inside3D_2.png" scale="1/2" /> }}
+{{ <image path="img/inside4D.png" scale="1/2" /> }}
+{{ <image path="img/inside4D_2.png" scale="1/2" /> }}
+{% </container> %}
 
 Картинки взяты [отсюда](http://eusebeia.dyndns.org/4d/vis/11-interp-2).
 
@@ -179,15 +179,15 @@ button = { text = "Репозиторий этой страницы", link="http
 
 [**The Regular Polychora**](http://eusebeia.dyndns.org/4d/regular)
 
-{{ figure_start() }}
-{{ image(path="img/spidrox-006.png", scale="1/2") }}
-{{ figure_end(caption="[Источник](http://eusebeia.dyndns.org/4d/spidrox)") }}
+{% <figure caption="[Источник](http://eusebeia.dyndns.org/4d/spidrox)"> %}
+{{ <image path="img/spidrox-006.png" scale="1/2" /> }}
+{% </figure> %}
 
 Вообще, я не представляю каким образом они смогли рассчитать все эти фигуры, это просто невообразимо. Наверное за этим стоит очень сложная математика. Жаль что они написали координаты фигур в таком неудобном формате.
 
 ## 4D toys
 
-{{ myyoutube(id="0t4aKJuKP0Q") }}
+{{ <myyoutube id="0t4aKJuKP0Q" /> }}
 
 Это игра, где можно взаимодействовать с 4D объектами, в том числе и при помощи VR.
 
@@ -205,34 +205,34 @@ button = { text = "Репозиторий этой страницы", link="http
 
 ## Видео о том, как нарисовать тессеракт и что он из себя представляет
 
-{{ myyoutube(id="iGO12Z5Lw8s") }}
+{{ <myyoutube id="iGO12Z5Lw8s" /> }}
 
 ## Сборка тессеракта из его развёртки
 
 Берётся 3D развёртка тессеракта и собирается в 4D куб, всё по аналогии с 2D развёрткой 3D куба.
 
-{{ myyoutube(id="BVo2igbFSPE") }}
+{{ <myyoutube id="BVo2igbFSPE" /> }}
 
 ## Как собирается 120-cell
 
 120-cell - правильная фигура в 4D, состоящая исключительно из додэкаэдров, которые в свою очередь состоят из правильных пятиугольников.
 
-{{ myyoutube(id="MFXRRW9goTs") }}
+{{ <myyoutube id="MFXRRW9goTs" /> }}
 
 Это очень красивое видео, где показывается как собирается эта фигура из её развёртки.
 
 ## Бродилка по 2D пространству
 
-{{ figure_start() }}
-{{ image(path="img/bl1nd.png") }}
-{{ figure_end(caption="[Ссылка на игру](https://github.com/shaunlebron/bl1nd-ld28)") }}
+{% <figure caption="[Ссылка на игру](https://github.com/shaunlebron/bl1nd-ld28)"> %}
+{{ <image path="img/bl1nd.png" /> }}
+{% </figure> %}
 
 Вам даётся 1D зрение на 360 градусов, и вы должны бродить по 2D миру с таким зрением. В целом игра хорошая, только ей очень не хватает освещения, а то различить угол фигуры и её прямую часть невозможно, отчего сложней ориентироваться. В 3D подобный образ рисования выглядел бы так:
 
-{{ container_start() }}
-{{ image(path="img/blind1.jpg", scale="1/2") }}
-{{ image(path="img/blind2.jpg", scale="1/2") }}
-{{ container_end() }}
+{% <container> %}
+{{ <image path="img/blind1.jpg" scale="1/2" /> }}
+{{ <image path="img/blind2.jpg" scale="1/2" /> }}
+{% </container> %}
 
 Так же там на гифках хорошо показывается как работает проекция.
 
@@ -242,11 +242,11 @@ button = { text = "Репозиторий этой страницы", link="http
 
 ## Поржать 
 
-{{ myyoutube(id="psbp9LtYnSI") }}
+{{ <myyoutube id="psbp9LtYnSI" /> }}
 
 ## Всякое пространственное
 
-{{ myyoutube(id="CN_hdnnvPdo") }}
+{{ <myyoutube id="CN_hdnnvPdo" /> }}
 
 Видео не идеальное, но есть много интересностей и прикольных визуализаций.
 
@@ -254,16 +254,19 @@ button = { text = "Репозиторий этой страницы", link="http
 
 * Порталы
   * **Неевклидовы миры.** Реализовано на базе порталов. Никакой сверхгеометрии там нет, просто все эти комнаты лежат в другом месте, и порталы телепортируют тебя в нужное место.
-{{ myyoutube(id="kEB11PQ9Eo8") }}
+{{ <myyoutube id="kEB11PQ9Eo8" /> }}
+
   * [**Портал в портале.**](https://pikabu.ru/story/portal_v_portale_reshenie_problemyi_s_pomoshchyu_simulyatsii_7066445) - моя работа.
   * [Порталы - это не неевклидова геометрия!](https://t.me/metageometria/367)
 * Высшие и низшие размерности
 * Сферическая геометрия
 	* [Прикольное видео про стереографичекую проекцию](http://www-users.math.umn.edu/~arnold//moebius/moebius-movie.mov). Взято [отсюда.](http://www-users.math.umn.edu/~arnold//moebius/)
-{{ image(path="img/stereo1.jpg") }}
+{{ <image path="img/stereo1.jpg" /> }}
+
 * Геометрия лобачевского
 	* [Кубик-рубика в разных пространствах](http://roice3.org/magictile/)
-{{ image(path="img/magictile_header.png") }}
+{{ <image path="img/magictile_header.png" /> }}
+
 * [Фрактальная размерность пространства](https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BA%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C)
 * [Реально неевклидовый мир](https://www.youtube.com/watch?v=tl40xidKF-4)
 
@@ -275,11 +278,11 @@ button = { text = "Репозиторий этой страницы", link="http
 
 [Тыщ](http://hi.gher.space/forum/)
 
-## Объяснение того, как работают проекции
+## Объяснение того, как работают проекции {#obiasnenie-togo-kak-rabotaiut-proektsii}
 
-{{ figure_start() }}
-{{ image(path="img/projections.png") }}
-{{ figure_end(caption="[Ссылка на страницу](http://shaunlebron.github.io/visualizing-projections/)") }}
+{% <figure caption="[Ссылка на страницу](http://shaunlebron.github.io/visualizing-projections/)"> %}
+{{ <image path="img/projections.png" /> }}
+{% </figure> %}
 
 ## Рейтрейсинг четырёхрменого пространства
 
