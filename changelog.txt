@@ -4,7 +4,7 @@
 
 # 2020.11.16
 
-Перевод этой страницы на [submodules + jekyll](/p/submodules/).
+Перевод этой страницы на [submodules + jekyll](/p/submodules-jekyll/).
 
 # 2020.01.05
 
