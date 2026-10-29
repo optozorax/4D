@@ -1,0 +1,11 @@
+# 2021.08.26
+
+Moved this page to the new blog on Zola.
+
+# 2020.11.16
+
+Moved this page to [submodules + jekyll](/en/p/submodules-jekyll/).
+
+# 2020.01.05
+
+First publication.
